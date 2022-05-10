@@ -1,0 +1,61 @@
+object Main: TMain
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 350
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 350.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Rectangle1: TRectangle
+      Align = Client
+      Fill.Color = claAntiquewhite
+      Size.Width = 350.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+  end
+  object Background: TRectangle
+    Align = Client
+    Fill.Color = claWhite
+    Size.Width = 350.000000000000000000
+    Size.Height = 440.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object Btn_Vertical: TSpeedButton
+      Align = Top
+      Margins.Left = 50.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 50.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Position.X = 50.000000000000000000
+      Position.Y = 20.000000000000000000
+      Size.Width = 250.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Animate vertical'
+      OnClick = Btn_VerticalClick
+    end
+    object btn_Horizontal: TSpeedButton
+      Align = Top
+      Margins.Left = 50.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 50.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Position.X = 50.000000000000000000
+      Position.Y = 82.000000000000000000
+      Size.Width = 250.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Animate horizontal'
+      OnClick = btn_HorizontalClick
+    end
+  end
+end
